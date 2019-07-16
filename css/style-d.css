@@ -11,6 +11,10 @@ body{
   margin:0; 
 }
 
+h1,h2,h3{
+	text-transform: uppercase;
+}
+
 h1, h2, h3, h4{
 	color:#fff;
 }
@@ -26,7 +30,7 @@ h1, h2, h3, h4{
 	margin:0 auto;
 	width:700px;
 	color:rgba(255,255,255,0.7);
-	
+
 }
 
 
