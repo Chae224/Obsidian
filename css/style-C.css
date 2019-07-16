@@ -1,0 +1,136 @@
+body {
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-family: "Open sans";
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.menu-C {
+  margin: auto;
+  width: 1100px;
+}
+.menu-C ul {
+  padding: 0;
+  padding-top: 20px;
+  margin:auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.menu-C a {
+  text-decoration: none;
+  color: rgba(200,200,200)
+}
+.menu-C a:hover {
+  color: white;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  font-weight: 300;
+  margin: 0;
+  margin-top: 200px;
+  color: rgba(240,240,240);
+}
+h2 {
+  display:flex;
+  justify-content:center;
+  margin: 0;
+  color: rgba(200,200,200);
+  margin-bottom: 200px;
+}
+h3 {
+  color: white;
+  margin:0;
+  margin-bottom: 10px;
+}
+.video-C a {
+  text-decoration: none;
+  color: white;
+}
+.video-C {
+  width: 1100px;
+  margin: auto;
+}
+.entete-C {
+  display: flex;
+  justify-content: space-between;
+}
+.entete-C a {
+  color: rgba(200,200,200);
+}
+.entete-C a:hover {
+  color: white;
+}
+.blocvideo-C {
+  display: flex;
+  width: 1100px;
+}
+.blocvideo-C a {
+  color: white;
+}
+.video2-C {
+  border: 1px solid grey;
+  padding: 20px;
+}
+.video1-C, .video3-C {
+  padding: 20px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.gigs-C {
+  width: 1100px;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.gigs-C a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 15px;
+}
+table {
+  width: 1100px;
+  border-collapse: collapse;
+  color: white;
+}
+table tr td {
+  height: 40px;
+  border-top: 1px solid grey;
+  border-bottom: 1px  solid grey;
+}
+.col1-c {
+  width: 30px;
+}
+table i {
+  color: rgba(200,200,200)
+}
+.footerhaut-C {
+  border-top: 1px solid grey;  
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  width: 1100px;
+  color: white;
+}
+.footerhaut-C i {
+  color: rgba(200,200,200)
+}
+.blocfoot-C {
+  width: 33%;
+  padding: 20px;
+}
+.about-C p {
+  color: rgba(200,200,200)
+}
