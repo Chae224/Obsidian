@@ -7,6 +7,12 @@ body{
   background-size: cover;
   margin:0; 
 }
+
+.container{
+	width:1100px;
+	margin:0 auto;
+}
+
 .container-bio-d{
 	margin:0 auto;
 	width:700px;
