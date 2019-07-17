@@ -1,8 +1,10 @@
  #body-n{
      font-family: 'Open Sans';
-     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/background.jpg");
-     background-size:contain;
-     background-repeat: repeat;
+     background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/background.jpg");
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
      padding:0px;
      margin:0px;
      color:white;
@@ -20,33 +22,6 @@
    
     height: 340px;
     padding-bottom: 15px;
-}
-
-#sub-body-n header nav{
-    display: flex;
-    justify-content: center;
-    font-weight: 100;
-    padding-top:47px;
-}
-
-#sub-body-n header nav ul{
-
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    list-style-type: none;
-    padding:0px;
-    width: 625px;
-}
-
-#sub-body-n header nav ul li a{
-    text-decoration: none;
-    color:#ababab;
-}
-
-#sub-body-n header nav ul li a:hover{
-    color:white;
-    font-weight: 100;
 }
 
 #sub-body-n header #title-and-pagetitle-n h1{

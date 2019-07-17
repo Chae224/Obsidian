@@ -1,0 +1,65 @@
+body {
+  background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-family: "Open sans";
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.calendar {
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  color: white;
+  border-top: 1px solid grey;
+}
+.calendar p {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.mainTable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1100px;
+  color: white;
+  margin:auto;
+  border-top: 1px solid grey;
+}
+.mainTable p {
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+table {
+  width: 1100px;
+  border-collapse: collapse;
+  color: white;
+}
+table tr td {
+  height: 40px;
+  border-top: 1px solid grey;
+  /*! border-bottom: 1px  solid grey; */
+}
+table i {
+  color: rgba(200,200,200)
+}
+table tr .specialTD {
+  width: 1000px;
+  font-size: 12px;
+  padding: 0;
+  padding-left: 95px;
+  border: none;
+}
+.borderBotTR {
+  border-bottom: 1px solid grey;
+}
+.col1-c {
+  width: 40px;
+}
