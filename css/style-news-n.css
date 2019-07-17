@@ -1,15 +1,3 @@
-#body-n{
-    font-family: 'Open Sans';
-    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/background.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    padding:0px;
-    margin:0px;
-    color:white;
-}
-
 
 
 #sub-body-n{
