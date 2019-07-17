@@ -139,4 +139,101 @@
 		</div>
 		
 		<!-- Fin footer -->
+		<!-- Début Music Player -->
+		<div class="musicPlayer-mini" id="musicPlayer-mini">
+			<img class="miniature" src="images/album-03-300x300.jpg"/>
+			<input type="checkbox" id="playerToggle2"></input>
+			<label onclick="ouverture()" id="ouverture"for="playerToggle2" class="fas fa-caret-right"></label>
+		</div>
+		<div class="musicPlayer" id="musicPlayer">
+			
+			<input type="checkbox" id="previous"></input>
+			<label for="previous" class="fas fa-step-backward"></label>
+			
+			<input type="checkbox" id="playPause"></input>
+			<label id="play" onclick="togglePlay()" for="playPause" class="fas fa-play"></label>
+			
+			<input type="checkbox" id="next"></input>
+			<label class="fas fa-step-forward"></label>
+			
+			<img class="miniature" src="images/album-03-300x300.jpg"/>
+			
+			<p id="title" class="title">Aeolus - She Threw Herself Into the Sea</p>
+			<p class="timer">00:00 / 2:18</p>
+			
+			
+			<div id="vol" class="fas fa-volume-up fa-volume-mute"><div id="containerVol"><div id="volume"></div></div></div>
+			
+			<input type="checkbox" id="songchoice"></input>
+			<label for="songchoice" class="fas fa-bars"></label>
+			
+			<input type="checkbox" id="playerToggle"></input>
+			<label onclick="fermeture()" id="fermeture"for="playerToggle" class="fas fa-caret-left"></label>
+		</div>
+		<!-- Fin Music Player -->
+		<script>
+			$("#volume").slider({
+			orientation: "vertical",
+			min: 0,
+			max: 100,
+			value: 0,
+			range: "min",
+			slide: function(event, ui) {
+			setVolume(ui.value / 100);
+			}
+			});
+			
+			var myMedia = document.createElement('audio');
+			$('.musicPlayer').append(myMedia);
+			myMedia.id = "myMedia";
+
+			playAudio('http://emilcarlsson.se/assets/Avicii%20-%20The%20Nights.mp3', 0);
+	
+			function playAudio(fileName, myVolume) {
+				myMedia.src = fileName;
+				myMedia.setAttribute('loop', 'loop');
+				setVolume(myVolume);
+				myMedia.play();
+			}
+		
+			function setVolume(myVolume) {
+				var myMedia = document.getElementById('myMedia');
+				myMedia.volume = myVolume;
+			}
+		</script>
+		<script>
+			function togglePlay(){
+		
+			
+				var titlebackground = document.getElementById("title");
+				var getplay = document.getElementById("play");
+				
+				if(getplay.className != "fas fa-pause" ){
+						getplay.className = "fas fa-pause";
+						titlebackground.style.background = "grey";
+					
+				}
+				else{
+						getplay.className = "fas fa-play";
+						titlebackground.style.background = "black";
+				}
+
+			}
+			
+			function fermeture(){
+				var musicplayer = document.getElementById("musicPlayer");
+				var mini = document.getElementById("musicPlayer-mini");
+				
+				musicplayer.style.visibility = "hidden";
+				mini.style.visibility = "visible";
+			}
+			
+			function ouverture(){
+			var musicplayer = document.getElementById("musicPlayer");
+				var mini = document.getElementById("musicPlayer-mini");
+				
+				musicplayer.style.visibility = "visible";
+				mini.style.visibility = "hidden";
+			}
+		</script>
 	</body>
