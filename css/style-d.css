@@ -1,18 +1,35 @@
-body{
+ody{
 	font-size:14px;
-	background: linear-gradient(
- rgba(0, 0, 0, 0.7), 
- rgba(0, 0, 0, 0.7)
- ), url('../images/background.jpg');
-	 background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  margin:0; 
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	font-family: "Open sans";
+	font-size:14px;
 }
 
 h1,h2,h3{
 	text-transform: uppercase;
+}
+
+h1{
+	margin-bottom:47px;
+}
+
+.h2-d{
+	margin-bottom:25px;
+}
+
+.hr-n{
+    border:none;
+    border-top:solid lightgrey 0.1em;
+    height: 0px;
 }
 
 h1, h2, h3, h4{
@@ -33,6 +50,15 @@ h1, h2, h3, h4{
 
 }
 
+.before-content-d{
+	margin-top:50px;
+	background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/background.jpg");
+	background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 
 .before-content-d img{
 	width:100%;
@@ -50,17 +76,24 @@ display: flex;
 flex-direction: row;
 }
 
+.contact-d{
+	margin-top:50px;
+}
+
 .form-contact-d{
-	width:70%;
+	width:73%;
 	color:rgba(255,255,255,0.7);
 }
 
 .contact-last-article-d{
-	width:30%;
+	width:27%;
+}
+
+.article-date-d{
+	text-transform: uppercase;
 }
 
 .input-d{
-	width:50%;
 	padding-bottom:20px;
 }
 
@@ -74,8 +107,13 @@ flex-direction: row;
 }
 
 input[type="text"], input[type="email"], textarea{
-	background: rgba(0,0,0,0.7);
-	border: 1px solid rgba(255,255,255,0.4);
+	background: rgba(0,0,0,0.3);
+	border: 1px solid rgba(255,255,255,0.2);
+}
+
+#input-search{
+	width:100%;
+	margin-bottom:40px;
 }
 
 label{
@@ -90,25 +128,28 @@ textarea{
 
 input[type="text"], input[type="email"]{
 	height: 40px;
-	width: 250px;	
+	width: 50%;	
 }
 
 input[type="submit"]{
 	height: 40px;
-	width: 100px;
-	background: rgba(0,0,0,0.7);
+	width: 110px;
+	background: rgba(0,0,0,0.5);
 	border: none;
 	color: rgba(255,255,255,0.7);
+	margin-top:10px;
+	font-weight:bold;
 }
 
 input[type="text"]::placeholder {
-  color: rgba(255,255,255,0.5);
+  color: #fff;
 }
 
 .article-d p{
-	color: rgba(255,255,255,0.5);
+	color: rgba(255,255,255,0.6);
 }
 
 .article-date-d{
 	color: rgba(255,255,255,0.3);
+	margin-bottom: 30px;
 }
