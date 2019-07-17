@@ -18,7 +18,7 @@
 
 #sub-body-n header{
    
-    height: 340px;
+
     padding-bottom: 15px;
 }
 
@@ -49,17 +49,16 @@
     font-weight: 100;
 }
 
-#sub-body-n header #title-and-pagetitle-n h1{
+#sub-body-n  #title-and-pagetitle-n h1{
     
     text-align: center;
     font-size:5em;
     font-weight: 100;
 }
 
-#sub-body-n header #title-and-pagetitle-n h3{
+#sub-body-n  #title-and-pagetitle-n h3{
     
     text-align: center;
-   
     font-size:1.7em;
 }
 
