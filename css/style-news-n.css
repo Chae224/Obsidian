@@ -1,0 +1,157 @@
+#body-n{
+    font-family: 'Open Sans';
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/background.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding:0px;
+    margin:0px;
+    color:white;
+}
+
+
+
+#sub-body-n{
+   width:1100px;
+   margin:auto;
+   
+}
+
+.hr-n{
+   border:none;
+   border-top:solid lightgrey 0.1em;
+   height: 0px;
+}
+
+
+
+#news-n{
+   padding-top:50px;
+   padding-bottom:0px;
+   
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+#news-n #articles-news-n{
+   width: 705px;
+   border-bottom:solid lightgrey 1px;
+   
+   
+}
+
+#news-n #articles-news-n article h3{
+    font-weight:400;
+    margin-top:0px;
+    margin-bottom:13px;
+    font-size:1.9em;
+}
+
+#news-n #articles-news-n article h3 a{
+    color:white;
+    text-decoration: none;
+}
+
+#news-n #articles-news-n article h3 a:hover{
+   
+    text-decoration: underline;
+}
+
+#news-n #articles-news-n article time{
+    font-weight: 400;
+    display: block;
+    font-size:0.8em;
+    
+
+}
+
+#news-n #articles-news-n article p{
+    font-weight: 100;
+    padding-top:10px;
+    font-size:1em;
+    color:#c2c2c2;
+
+}
+
+#news-n #articles-news-n article p a{
+    color:white;
+}
+#news-n #articles-news-n article img{
+    width: 100%;
+    margin-top:35px;
+}
+#news-n #articles-news-n article{
+    padding-bottom:20px;
+    
+}
+
+
+#sub-body-n #main-container-n #news-n #news-aside-n{
+   width:340px;
+   border:solid orange;
+}
+
+#pagination-n #ul-pagination-n{
+ 
+    display: flex;
+    list-style-type: none;
+    padding:0px;
+}
+#pagination-n #ul-pagination-n .li-pagination-n{
+    border:solid lightgrey 1px;
+    margin-right: 10px;
+    width:43px;
+    height:43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+
+#pagination-n #ul-pagination-n .li-pagination-n:hover{
+    background-color:#4d4d4d;
+}
+
+.contact-last-article-d{
+	width:27%;
+}
+
+.article-date-d{
+	text-transform: uppercase;
+}
+
+.input-d{
+	padding-bottom:20px;
+}
+
+#input-search{
+	width:100%;
+	margin-bottom:40px;
+}
+
+input[type="text"]::placeholder {
+    color: #fff;
+  }
+
+  input[type="text"]{
+	background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.2);
+    height: 40px;
+}
+
+.article-d p{
+	color: rgba(255,255,255,0.6);
+}
+
+.article-date-d{
+	color: rgba(255,255,255,0.3);
+	margin-bottom: 30px;
+}
+
+
+
+
+
+
