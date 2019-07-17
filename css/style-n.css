@@ -1,0 +1,190 @@
+ #body-n{
+     font-family: 'Open Sans';
+     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/background.jpg");
+     background-size:contain;
+     background-repeat: repeat;
+     padding:0px;
+     margin:0px;
+     color:white;
+ }
+
+ 
+
+#sub-body-n{
+    width:1100px;
+    margin:auto;
+    
+}
+
+#sub-body-n header{
+   
+
+    padding-bottom: 15px;
+}
+
+#sub-body-n header nav{
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    padding-top:47px;
+}
+
+#sub-body-n header nav ul{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    list-style-type: none;
+    padding:0px;
+    width: 625px;
+}
+
+#sub-body-n header nav ul li a{
+    text-decoration: none;
+    color:#ababab;
+}
+
+#sub-body-n header nav ul li a:hover{
+    color:white;
+    font-weight: 100;
+}
+
+#sub-body-n  #title-and-pagetitle-n h1{
+    
+    text-align: center;
+    font-size:5em;
+    font-weight: 100;
+}
+
+#sub-body-n  #title-and-pagetitle-n h3{
+    
+    text-align: center;
+    font-size:1.7em;
+}
+
+.hr-n{
+    border:none;
+    border-top:solid lightgrey 0.1em;
+    height: 0px;
+}
+
+#gallerie-n{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+#sub-body-n #main-container-n #gallerie-n{
+  
+}
+
+#sub-body-n #main-container-n #gallerie-n #photos-n{
+    
+    display: flex;
+
+    flex-flow: row wrap;
+    height: 1010px;
+
+}
+
+
+
+#row-n{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+#col-n{
+    margin-left:6px;
+}
+
+
+/*Numéro des photos*/
+#un-n {
+    width: 730px;
+    
+    order:1;
+}
+
+#deux-n{
+    width: 362px;
+    height: 240px;
+    order:2;
+}
+
+#trois-n{
+    width: 362px;
+    order:2;
+    height: 240px;
+}
+
+#quatre-n{
+    width: 445px;
+    order:4;
+}
+
+#cinq-n{
+    width: 445px;
+    order:5;
+}
+
+#six-n{
+    width: 200px;
+    order:6;
+}
+
+#sept-n{
+    width: 320px;
+    order:7;
+}
+
+#huit-n{
+    width: 320px;
+    order:8;
+}
+
+#neuf-n{
+    width: 141px;
+    order:9;
+}
+
+#dix-n{
+    width: 304px;
+    order:10;
+}
+
+/*Fin des numéros des photos*/
+
+#widgets-n{
+    display: flex;
+   
+    justify-content: space-between;
+}
+
+#widgets-n div{
+    width: 30%;
+    font-size:1em;
+    color:#c3c3c3;
+
+}
+#widgets-n div h4{
+    font-size:0.8em;
+    color:white;
+}
+
+#widgets-n #recent-posts-n article{
+    margin:0px 0px 15px 0px;
+}
+
+#widgets-n #recent-posts-n article p{
+    font-size:0.9em;
+    font-weight:bold;
+    margin:0px 0px 5px 0px;
+    color:white;
+}
+
+#widgets-n #recent-posts-n article time{
+    font-size: 0.7em;
+}
+
+
