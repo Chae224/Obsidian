@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style-music-n.css">
+		<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600&display=swap" rel="stylesheet"> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    </head>
+		<!-- Début Menu -->
+		
+			<header class="menu-C">
+				<nav>
+					<ul>
+						<li><a href="home.html">HOME</a></li>
+						<li><a href="bio.html">BIO</a></li>
+						<li><a href="photos.html">PHOTOS</a></li>
+						<li><a href="music.html">MUSIC</a></li>
+						<li><a href="videos.html">VIDEOS</a></li>
+						<li><a href="news.html">NEWS</a></li>
+						<li><a href="tour.html">TOUR</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</nav>
+			</header>
+		
+			<h1>OBSIDIAN</h1>
+			<h2>MUSIC</h2>
+		<!-- Fin Menu -->
+		
+    <body id="body-n">
+        
+            <div id="sub-body-n">
+               
+
+                <section id="main-container-n">
+
+                  
+
+                    <hr class="hr-n">
+
+                    <div id="music-n">
+                        <div id="album-n">
+                            <img src="images/album-03-300x300.jpg" alt="AEOLUS">
+                            <ul id="buy-music-n">
+                                <li class="online-shop-n">
+                                    <a href="https://www.apple.com/itunes/" target="_blank">ITUNES</a>
+                                </li>
+
+                                <li class="online-shop-n">
+                                    <a href="https://www.amazon.com/MP3-Music-Download/b/ref=nav_shopall_dmusic?ie=UTF8&node=163856011" target="_blank">AMAZON</a>
+                                </li>
+
+                                <li class="online-shop-n">
+                                    <a href="https://www.spotify.com/us/" target="_blank">SPOTIFY</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div id="music-titles-n">
+                            <h4>Vivenne's Omitted Line</h4>
+                            <time>RELEASE: 2013</time>
+
+                            <div id="container-table-n">
+                                    <table>
+                                            <tr>
+                                                
+                                              <td>1</td>
+                                              <td>The Buriel of the Dead</td>
+                                              <td>-:--</td>
+                                            
+                                                
+                                            </tr>
+                                            <tr>
+                                              <td>2</td>
+                                              <td>Dirge</td>
+                                              <td>-:--</td>
+                                            </tr>
+                                            <tr>
+                                              <td>3</td>
+                                              <td>The Fire Sermon</td>
+                                              <td>-:--</td>
+                                            </tr>
+                                            <tr>
+                                              <td>4</td>
+                                              <td>The Fisher King</td>
+                                              <td>-:--</td>
+                                            </tr>
+                                            <tr>
+                                              <td>5</td>
+                                              <td>A Game of Chess</td>
+                                              <td>-:--</td>
+                                            </tr>
+                                            <tr>
+                                              <td>6</td>
+                                              <td>Vivienne's Omitted Line</td>
+                                              <td>-:--</td>
+                                            </tr>
+                                            <tr>
+                                              <td>7</td>
+                                              <td>What the Thunder Said</td>
+                                              <td>-:--</td>
+                                            </tr>
+                                            <tr>
+                                              <td>8</td>
+                                              <td>The Wounded King</td>
+                                              <td>-:--</td>
+                                            </tr>
+                                          </table>
+                            </div>
+
+
+                        </div>
+                        
+                           
+                    </div>
+                   
+
+                    
+
+
+                    
+                </section>
+            </div>
+        <!-- Début Music Player -->
+		<div class="musicPlayer-mini" id="musicPlayer-mini">
+			<img class="miniature" src="images/album-03-300x300.jpg"/>
+			<input type="checkbox" id="playerToggle2"></input>
+			<label onclick="ouverture()" id="ouverture"for="playerToggle2" class="fas fa-caret-right"></label>
+		</div>
+		<div class="musicPlayer" id="musicPlayer">
+			
+			<input type="checkbox" id="previous"></input>
+			<label for="previous" class="fas fa-step-backward"></label>
+			
+			<input type="checkbox" id="playPause"></input>
+			<label id="play" onclick="togglePlay()" for="playPause" class="fas fa-play"></label>
+			
+			<input type="checkbox" id="next"></input>
+			<label class="fas fa-step-forward"></label>
+			
+			<img class="miniature" src="images/album-03-300x300.jpg"/>
+			
+			<p id="title" class="title">Aeolus - She Threw Herself Into the Sea</p>
+			<p class="timer">00:00 / 2:18</p>
+			
+			
+			<div id="vol" class="fas fa-volume-up fa-volume-mute"><div id="containerVol"><div id="volume"></div></div></div>
+			
+			<input type="checkbox" id="songchoice"></input>
+			<label for="songchoice" class="fas fa-bars"></label>
+			
+			<input type="checkbox" id="playerToggle"></input>
+			<label onclick="fermeture()" id="fermeture"for="playerToggle" class="fas fa-caret-left"></label>
+		</div>
+		<!-- Fin Music Player -->
+		<script>
+			$("#volume").slider({
+			orientation: "vertical",
+			min: 0,
+			max: 100,
+			value: 0,
+			range: "min",
+			slide: function(event, ui) {
+			setVolume(ui.value / 100);
+			}
+			});
+			
+			var myMedia = document.createElement('audio');
+			$('.musicPlayer').append(myMedia);
+			myMedia.id = "myMedia";
+
+			playAudio('http://emilcarlsson.se/assets/Avicii%20-%20The%20Nights.mp3', 0);
+	
+			function playAudio(fileName, myVolume) {
+				myMedia.src = fileName;
+				myMedia.setAttribute('loop', 'loop');
+				setVolume(myVolume);
+				myMedia.play();
+			}
+		
+			function setVolume(myVolume) {
+				var myMedia = document.getElementById('myMedia');
+				myMedia.volume = myVolume;
+			}
+		</script>
+		<script>
+			function togglePlay(){
+		
+			
+				var titlebackground = document.getElementById("title");
+				var getplay = document.getElementById("play");
+				
+				if(getplay.className != "fas fa-pause" ){
+						getplay.className = "fas fa-pause";
+						titlebackground.style.background = "grey";
+					
+				}
+				else{
+						getplay.className = "fas fa-play";
+						titlebackground.style.background = "black";
+				}
+
+			}
+			
+			function fermeture(){
+				var musicplayer = document.getElementById("musicPlayer");
+				var mini = document.getElementById("musicPlayer-mini");
+				
+				musicplayer.style.visibility = "hidden";
+				mini.style.visibility = "visible";
+			}
+			
+			function ouverture(){
+			var musicplayer = document.getElementById("musicPlayer");
+				var mini = document.getElementById("musicPlayer-mini");
+				
+				musicplayer.style.visibility = "visible";
+				mini.style.visibility = "hidden";
+			}
+		</script>
+
+    </body>
+
+</html>
