@@ -1,0 +1,125 @@
+#body-n{
+    font-family: 'Open Sans';
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/background.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding:0px;
+    margin:0px;
+    color:white;
+}
+
+
+
+#sub-body-n{
+   width:1100px;
+   margin:auto;
+   
+}
+
+.hr-n{
+   border:none;
+   border-top:solid lightgrey 0.1em;
+   height: 0px;
+}
+
+#music-n{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    color:rgba(255, 255, 255, 0.9);
+    
+}
+
+#album-n{
+   
+    flex:1;
+    min-width:340px ;
+    max-width: 340px;
+}
+
+#music-titles-n{
+    
+    flex:8;
+    margin-left: 54px;
+}
+
+#album-n img{
+    width: 100%;
+}
+
+#album-n #buy-music-n{
+    
+    list-style-type: none;
+    padding: 0px;
+}
+#album-n #buy-music-n .online-shop-n{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background:rgba(0,0,0,0.5);
+    margin-bottom:10px;
+}
+
+#album-n #buy-music-n .online-shop-n a{
+    color:#bcbcbc;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+#album-n #buy-music-n .online-shop-n:hover a{
+    color:white;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+#album-n #buy-music-n .online-shop-n:hover{
+    background:rgba(0,0,0,0.8);
+}
+
+#music-titles-n h4{ 
+    font-size:1.8em;
+    font-weight: 400;
+    margin:0px 0px 29px 0px;
+
+}
+
+#music-titles-n time{ 
+    display: block;
+    font-size:0.8em;
+    font-weight: 900;
+    margin:0px 0px 29px 0px;
+
+}
+
+
+#container-table-n table{
+    border-bottom:solid rgba(255, 255, 255, 0.6) 1px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#container-table-n table td{
+    padding:23px 0px 23px 0px;
+    
+
+}
+
+#container-table-n table tr{
+    
+    justify-content: space-between;
+    border-top:solid rgba(255, 255, 255, 0.6) 1px;
+}
+
+#container-table-n table tr:hover{
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    
+}
+
+
+
