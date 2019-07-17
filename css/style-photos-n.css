@@ -1,28 +1,8 @@
- #body-n{
-     font-family: 'Open Sans';
-     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/background.jpg");
-     background-size:cover;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     background-position: center;
-     padding:0px;
-     margin:0px;
-     color:white;
- }
-
- 
-
 #sub-body-n{
     width:1100px;
     margin:auto;
     
 }
-
-
-
-
-
-
 
 .hr-n{
     border:none;
